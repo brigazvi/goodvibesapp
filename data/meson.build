@@ -1,0 +1,30 @@
+config_data = configuration_data()
+config_data.set('EXEC_NAME', meson.project_name())
+
+install_data(
+    'global.goodvibes.goodvibes.gschema.xml',
+    install_dir: join_paths(get_option('prefix'), get_option('datadir'), 'glib-2.0', 'schemas')
+)
+
+desktop_in_file = configure_file(
+    input: 'global.goodvibes.goodvibes.desktop.in.in',
+    output: '@BASENAME@',
+    configuration: config_data
+)
+
+desktop_file = i18n.merge_file(
+    input: desktop_in_file,
+    output: 'global.goodvibes.goodvibes.desktop',
+    po_dir: join_paths(meson.source_root (), 'po', 'extra'),
+    type: 'desktop',
+    install_dir: join_paths(get_option('datadir'), 'applications'),
+    install: true
+)
+
+appstream_file = i18n.merge_file(
+    input: 'global.goodvibes.goodvibes.appdata.xml.in',
+    output: '@BASENAME@',
+    po_dir: join_paths(meson.source_root (), 'po', 'extra'),
+    install_dir: join_paths(get_option('datadir'), 'metainfo'),
+    install: true
+)

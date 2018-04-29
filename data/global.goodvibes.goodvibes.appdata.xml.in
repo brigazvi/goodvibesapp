@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2018 Coralynn Colombe <coralynn@goodvibes.global -->
+<component type="desktop">
+  <id>global.goodvibes.goodvibes.desktop</id>
+  <metadata_license>MIT</metadata_license>
+  <name>GoodVibes</name>
+  <summary>Send and recieve good vibes!</summary>
+  <description>
+    <p>An app to send and recieve good vibes anonyously</p>
+  </description>
+</component>

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=GoodVibes
+GenericName=GoodVibes
+Comment=Send and receive good vibes
+Categories=Education;
+Exec=@EXEC_NAME@
+Icon=application-default-icon
+Terminal=false
+Type=Application
