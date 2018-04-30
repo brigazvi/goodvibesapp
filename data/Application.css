@@ -1,0 +1,11 @@
+.good-vibe {
+    background: none;
+}
+
+.good_vibe:focus {
+    background: none;
+}
+
+.header-bar {
+    /* background-image: linear-gradient(#d1ff82, #9bdb4d); */
+}

@@ -13,6 +13,9 @@ code_files = files(
     'Application.vala',
     'MainWindow.vala',
     'Services/Settings.vala',
+    'Services/Server.vala',
+    'Widgets/StackHeaderBar.vala',
+    'Widgets/GoodVibesReceiver.vala'
 )
 
 executable(

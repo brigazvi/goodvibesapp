@@ -23,6 +23,18 @@ namespace GoodVibes {
         private void init_layout () {
             set_default_size (600, 400);
 
+            var good_vibe = new GoodVibes.Widgets.GoodVibesReceiver ();
+
+            var header = new GoodVibes.Widgets.StackHeaderBar (good_vibe);
+            set_titlebar (header);
+
+            add (header.stack);
+
+            //header.stack.set_visible_child_name ("button2");
+
+            var style_context = get_style_context ();
+            style_context.add_class ("flat");
+
             show_all ();
         }
 
