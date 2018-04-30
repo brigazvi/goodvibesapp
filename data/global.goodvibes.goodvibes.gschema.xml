@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <schemalist>
+
+  <schema path="/global/goodvibes/goodvibes/saved-state/" id="global.goodvibes.goodvibes.saved-state">
+    <key name="lastvibe" type="s">
+      <default>
+        '{"_id":"0","lang":"en","vibe":"Click anywhere to start receiving vibes","strikes":0,"__v":0}'
+      </default>
+      <summary>Most Recent Vibe</summary>
+      <description>
+        Most recent vibe used for starting the app.
+      </description>
+    </key>
+  </schema>
+
   <schema path="/global/goodvibes/goodvibes/settings/" id="global.goodvibes.goodvibes.settings">
     <key name="server" type="s">
       <default>'http://api.goodvibes.global'</default>

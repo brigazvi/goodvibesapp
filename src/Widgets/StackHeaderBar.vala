@@ -28,12 +28,6 @@ namespace GoodVibes.Widgets {
             _stack.add_titled (good_vibe, "good_vibe", "Receive");
             _stack.add_titled (label, "send_vibe", "Send");
 
-            good_vibe.clicked.connect (() => {
-                GoodVibes.Vibe.random_from_server ((vibe) => {
-                        good_vibe.label= vibe.vibe;
-                    });
-            });
-
             report = new Gtk.Button.from_icon_name ("dialog-error-symbolic");
             report.tooltip_text = "Report Vibe";
 

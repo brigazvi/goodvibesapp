@@ -1,6 +1,6 @@
 namespace GoodVibes {
-    //public SavedState saved_state;
-    public Settings settings;
+    public GoodVibes.Services.SavedState saved_state;
+    public GoodVibes.Services.Settings settings;
 
     public class Application : Granite.Application {
         public string app_cmd_name { get {return _app_cmd_name; } }
@@ -16,8 +16,8 @@ namespace GoodVibes {
         public Application () {
             Granite.Services.Logger.initialize ("GoodVibes");
 
-            //saved_state = new SavedState ();
-            settings = new Settings ();
+            saved_state = new GoodVibes.Services.SavedState ();
+            settings = new GoodVibes.Services.Settings ();
         }
 
         public static Application _instance = null;

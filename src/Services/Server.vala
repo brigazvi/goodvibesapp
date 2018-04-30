@@ -1,4 +1,4 @@
-namespace GoodVibes {
+namespace GoodVibes.Services {
 
     public errordomain NullStringError {
         CODE_1A
@@ -30,6 +30,15 @@ namespace GoodVibes {
             return vibe;
         }
 
+        public static Vibe from_saved_state () {
+            return Vibe.from_json (GoodVibes.saved_state.lastvibe);
+        }
+
+        public void save_last_vibe () {
+            var node = Json.gobject_serialize (this);
+            GoodVibes.saved_state.lastvibe = Json.to_string (node, false);
+        }
+
         public static void random_from_server (VibeCallback cb) {
             var sess = new Soup.Session ();
             var uri = new StringBuilder ();
@@ -37,7 +46,9 @@ namespace GoodVibes {
             uri.append ("/v1/en/get_vibe");
             var msg = Soup.Form.request_new ("GET", uri.str);
             sess.queue_message (msg, (sess, msg) => {
-                    cb (Vibe.from_json ((string) msg.response_body.data));
+                    var vibe =Vibe.from_json ((string) msg.response_body.data);
+                    vibe.save_last_vibe ();
+                    cb (vibe);
                 });
         }
     }
