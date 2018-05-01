@@ -1,6 +1,7 @@
 namespace GoodVibes.Widgets {
     class StackHeaderBar : Gtk.HeaderBar {
 
+        public weak GoodVibes.MainWindow window { get; construct; }
         public weak GoodVibes.Widgets.GoodVibesReceiver good_vibe { get; construct; }
         public Gtk.Button report;
 
@@ -9,14 +10,16 @@ namespace GoodVibes.Widgets {
                 return _stack;
             } }
 
-        public StackHeaderBar (GoodVibes.Widgets.GoodVibesReceiver good_vibe) {
+        public StackHeaderBar (GoodVibes.MainWindow window, GoodVibes.Widgets.GoodVibesReceiver good_vibe) {
             Object (
-                good_vibe: good_vibe
+                window: window,
+                good_vibe: good_vibe,
+                show_close_button: true,
+                has_subtitle: false
             );
         }
 
         construct {
-            set_show_close_button (true);
             _stack = new Gtk.Stack ();
             _stack.set_transition_type (Gtk.StackTransitionType.SLIDE_LEFT_RIGHT);
             var stack_switcher = new Gtk.StackSwitcher ();
