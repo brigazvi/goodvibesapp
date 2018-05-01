@@ -8,6 +8,15 @@
     background: none;
 }
 
+.good-vibe-window {
+    background: #9ddbff;
+}
+
+.stack {
+    color: #000;
+    font-weight: bold;
+}
+
 .header-bar {
     /* background-image: linear-gradient(#d1ff82, #9bdb4d); */
 }

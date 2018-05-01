@@ -14,13 +14,13 @@ namespace GoodVibes.Widgets {
 
         construct {
             var view = new Gtk.Viewport (null, null);
+            view.set_size_request (700, 500);
             add (view);
             view.add (good_vibe_button);
             good_vibe_button.set_relief (Gtk.ReliefStyle.NONE);
             var good_vibe_context = good_vibe_button.get_style_context ();
             good_vibe_context.add_class ("good-vibe");
             good_vibe_button.add (good_vibe_label);
-
 
             var good_vibe_copy = new Gtk.MenuItem.with_label ("Copy");
             good_vibe_context_menu.append (good_vibe_copy);
@@ -40,6 +40,10 @@ namespace GoodVibes.Widgets {
             good_vibe_label.label = GoodVibes.Services.Vibe.from_saved_state ().vibe;
             var good_vibe_label_context = good_vibe_button.get_style_context ();
             good_vibe_label_context.add_class ("good-vibe");
+            good_vibe_label.max_width_chars = 39;
+            good_vibe_label.wrap = true;
+            good_vibe_label.wrap_mode = Pango.WrapMode.WORD;
+            
 
             good_vibe_button.clicked.connect (() => {
                 GoodVibes.Services.Vibe.random_from_server ((vibe) => {

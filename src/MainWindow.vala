@@ -21,7 +21,9 @@ namespace GoodVibes {
         }
 
         private void init_layout () {
-            set_default_size (600, 400);
+            set_size_request (650, 450);
+            set_resizable (false);
+
 
             var good_vibe = new GoodVibes.Widgets.GoodVibesReceiver (this);
 
@@ -34,6 +36,7 @@ namespace GoodVibes {
 
             var style_context = get_style_context ();
             style_context.add_class ("flat");
+            style_context.add_class ("good-vibe-window");
 
             show_all ();
         }
