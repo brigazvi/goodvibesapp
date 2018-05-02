@@ -1,0 +1,7 @@
+Format: http://dep.debian.net/deps/dep5
+Upstream-Name: global.goodvibes.goodvibes
+Source: http://goodvibes.global
+
+Files: *
+Copyright: 2018 Coralynn Colombe
+License: MIT
