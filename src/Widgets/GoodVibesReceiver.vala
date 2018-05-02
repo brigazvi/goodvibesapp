@@ -22,7 +22,7 @@ namespace GoodVibes.Widgets {
             good_vibe_context.add_class ("good-vibe");
             good_vibe_button.add (good_vibe_label);
 
-            var good_vibe_copy = new Gtk.MenuItem.with_label ("Copy");
+            var good_vibe_copy = new Gtk.MenuItem.with_label (_("Copy"));
             good_vibe_context_menu.append (good_vibe_copy);
             good_vibe_context_menu.show_all ();
 
@@ -43,7 +43,7 @@ namespace GoodVibes.Widgets {
             good_vibe_label.max_width_chars = 39;
             good_vibe_label.wrap = true;
             good_vibe_label.wrap_mode = Pango.WrapMode.WORD;
-            
+
 
             good_vibe_button.clicked.connect (() => {
                 GoodVibes.Services.Vibe.random_from_server ((vibe) => {

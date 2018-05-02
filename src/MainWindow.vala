@@ -26,8 +26,9 @@ namespace GoodVibes {
 
 
             var good_vibe = new GoodVibes.Widgets.GoodVibesReceiver (this);
+            var new_vibe = new GoodVibes.Widgets.GoodVibesSender (this);
 
-            var header = new GoodVibes.Widgets.StackHeaderBar (this, good_vibe);
+            var header = new GoodVibes.Widgets.StackHeaderBar (this, good_vibe, new_vibe);
             set_titlebar (header);
 
             add (header.stack);
@@ -39,6 +40,9 @@ namespace GoodVibes {
             style_context.add_class ("good-vibe-window");
 
             show_all ();
+
+            // It goes here until I can figure out how to make it not visible from within the stackheaderbar class
+            header.send_button.set_visible (false);
         }
 
     }

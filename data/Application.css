@@ -8,6 +8,22 @@
     background: none;
 }
 
+.new-vibe {
+    padding: 32px;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.send_button {
+    background: #41a204;
+    color: #fff;
+    font-weight: 600;
+}
+
+.send_button:active {
+}
+
 .good-vibe-window {
     background: #9ddbff;
 }

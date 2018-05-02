@@ -15,7 +15,8 @@ code_files = files(
     'Services/Settings.vala',
     'Services/Server.vala',
     'Widgets/StackHeaderBar.vala',
-    'Widgets/GoodVibesReceiver.vala'
+    'Widgets/GoodVibesReceiver.vala',
+    'Widgets/GoodVibeSender.vala'
 )
 
 executable(
