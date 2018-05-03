@@ -15,6 +15,10 @@
     font-weight: bold;
 }
 
+.new-vibe-placeholder {
+    color: #999;
+}
+
 .send_button {
     background: #41a204;
     color: #fff;
