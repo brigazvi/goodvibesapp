@@ -1,4 +1,4 @@
-Source: com.github.coralynnmay.goodvibes
+Source: com.github.coralynnmay.goodvibes-app
 Section: x11
 Maintainer: Coralynn Colombe <coralynn@goodvibes.global>
 Build-Depends: debhelper (>= 9),
@@ -13,7 +13,7 @@ Build-Depends: debhelper (>= 9),
 Standards-Version: 3.9.6
 Homepage: http://github.com/coralynnmay/goodvibes.app
 
-Package: com.github.coralynnmay.goodvibes
+Package: com.github.coralynnmay.goodvibes-app
 Architecture: any
 priority: optional
 Depends: ${misc:Depends}, ${shlibs:Depends}

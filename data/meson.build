@@ -15,19 +15,19 @@ config_data = configuration_data()
 config_data.set('EXEC_NAME', meson.project_name())
 
 install_data(
-    'com.github.coralynnmay.goodvibes.gschema.xml',
+    'com.github.coralynnmay.goodvibes-app.gschema.xml',
     install_dir: join_paths(get_option('prefix'), get_option('datadir'), 'glib-2.0', 'schemas')
 )
 
 desktop_in_file = configure_file(
-    input: 'com.github.coralynnmay.goodvibes.desktop.in.in',
+    input: 'com.github.coralynnmay.goodvibes-app.desktop.in.in',
     output: '@BASENAME@',
     configuration: config_data
 )
 
 desktop_file = i18n.merge_file(
     input: desktop_in_file,
-    output: 'com.github.coralynnmay.goodvibes.desktop',
+    output: 'com.github.coralynnmay.goodvibes-app.desktop',
     po_dir: join_paths(meson.source_root (), 'po', 'extra'),
     type: 'desktop',
     install_dir: join_paths(get_option('datadir'), 'applications'),
@@ -35,7 +35,7 @@ desktop_file = i18n.merge_file(
 )
 
 appstream_file = i18n.merge_file(
-    input: 'com.github.coralynnmay.goodvibes.appdata.xml.in',
+    input: 'com.github.coralynnmay.goodvibes-app.appdata.xml.in',
     output: '@BASENAME@',
     po_dir: join_paths(meson.source_root (), 'po', 'extra'),
     install_dir: join_paths(get_option('datadir'), 'metainfo'),

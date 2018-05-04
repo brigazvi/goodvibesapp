@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2018 Coralynn Colombe <coralynn@goodvibes.global -->
 <component type="desktop">
-  <id>com.github.coralynnmay.goodvibes.desktop</id>
+  <id>com.github.coralynnmay.goodvibes-app.desktop</id>
   <metadata_license>MIT</metadata_license>
   <name>GoodVibes</name>
   <summary>Send and recieve good vibes!</summary>
