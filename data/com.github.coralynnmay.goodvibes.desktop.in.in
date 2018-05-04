@@ -4,6 +4,6 @@ GenericName=GoodVibes
 Comment=Send and receive good vibes
 Categories=Education;
 Exec=@EXEC_NAME@
-Icon=global.goodvibes.goodvibes
+Icon=com.github.coralynnmay.goodvibes
 Terminal=false
 Type=Application
