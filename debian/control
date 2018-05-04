@@ -1,7 +1,15 @@
 Source: com.github.coralynnmay.goodvibes
 Section: x11
 Maintainer: Coralynn Colombe <coralynn@goodvibes.global>
-Build-Depends: debhelper (>= 9), libgee-0.8-dev, libgtk-3-dev, meson, valac
+Build-Depends: debhelper (>= 9),
+               libgee-0.8-dev,
+               libgtk-3-dev,
+               libgranite-dev,
+               libsoup-2.4-dev,
+               libjson-glib-dev,
+               libpango1.0-dev,
+               meson,
+               valac
 Standards-Version: 3.9.6
 Homepage: http://github.com/coralynnmay/goodvibes.app
 
