@@ -2,10 +2,10 @@ namespace GoodVibes {
     public class MainWindow : Gtk.Window {
         public weak GoodVibes.Application app { get; construct; }
 
-        public MainWindow (GoodVibes.Application goodvibes_app) {
+        public MainWindow (GoodVibes.Application goodvibesapp) {
             Object (
-                application: goodvibes_app,
-                app: goodvibes_app,
+                application: goodvibesapp,
+                app: goodvibesapp,
                 title: _("GoodVibes")
             );
         }
