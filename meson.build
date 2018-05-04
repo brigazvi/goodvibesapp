@@ -1,4 +1,4 @@
-project('global.goodvibes.goodvibes', 'vala', 'c', version: '0.1.0')
+project('global.goodvibes.goodvibes', 'vala', 'c', version: '0.8.0')
 
 add_project_arguments([
     '-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name())

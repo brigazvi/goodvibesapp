@@ -35,6 +35,11 @@ namespace GoodVibes.Widgets {
             pack_end (send_button);
             var send_button_context = send_button.get_style_context ();
             send_button_context.add_class ("send_button");
+            send_button.clicked.connect (() => {
+                var vibe = new GoodVibes.Services.Vibe ();
+                vibe.vibe = new_vibe.new_vibe_text_view.buffer.text;
+                vibe.send_vibe_to_server (new_vibe);
+            });
 
             _stack.add_titled (good_vibe, "good_vibe", _("Receive"));
             _stack.add_titled (new_vibe, "send_vibe", _("Send"));

@@ -21,7 +21,7 @@ namespace GoodVibes {
         }
 
         private void init_layout () {
-            set_size_request (650, 450);
+            set_size_request (650, 500);
             set_resizable (false);
 
 
