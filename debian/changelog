@@ -1,8 +1,8 @@
-global.goodvibes.goodvibes (0.8.1) xenial; urgency=low
+global.goodvibes.goodvibes (0.8.2) xenial; urgency=low
 
   * Initial Public release
 
-  -- Coralynn Colombe <coralynn@goodvibes.global>  Thu, 3 May 2018 08:21:34 -0400
+ -- Coralynn Colombe <coralynn@goodvibes.global>  Thu, 3 May 2018 08:21:34 -0400
 
 global.goodvibes.goodvibes (0.1.0) xenial; urgency=low
 
