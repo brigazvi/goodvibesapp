@@ -2,7 +2,7 @@
 
 <schemalist>
 
-  <schema path="/com/github/coralynnmay/goodvibes/saved-state/" id="com.github.coralynnmay.goodvibes.saved-state">
+  <schema path="/com/github/coralynnmay/goodvibes-app/saved-state/" id="com.github.coralynnmay.goodvibes-app.saved-state">
     <key name="lastvibe" type="s">
       <default>
         '{"_id":"0","lang":"en","vibe":"Click anywhere to start receiving vibes","strikes":0,"__v":0}'
@@ -14,7 +14,7 @@
     </key>
   </schema>
 
-  <schema path="/com/github/coralynnmay/goodvibes/settings/" id="com.github.coralynnmay.goodvibes.settings">
+  <schema path="/com/github/coralynnmay/goodvibes-app/settings/" id="com.github.coralynnmay.goodvibes-app.settings">
     <key name="server" type="s">
       <default>'http://api.goodvibes.global'</default>
       <summary>Server adress</summary>
