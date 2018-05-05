@@ -1,4 +1,4 @@
-project('com.github.coralynnmay.goodvibesapp', 'vala', 'c', version: '0.8.7')
+project('com.github.coralynnmay.goodvibesapp', 'vala', 'c', version: '0.8.8')
 
 add_project_arguments([
     '-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name())

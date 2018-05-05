@@ -11,7 +11,7 @@
   </description>
   ​<launchable type="desktop-id">com.github.coralynnmay.goodvibesapp.desktop</launchable>
   <releases>
-    <release version="0.8.7" date="2018-05-04">
+    <release version="0.8.8" date="2018-05-04">
       <description>
 ​        <p>Initial public release</p>
 ​      </description>
