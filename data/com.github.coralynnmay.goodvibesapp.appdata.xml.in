@@ -7,7 +7,7 @@
   <name>GoodVibes</name>
   <summary>Send and recieve good vibes!</summary>
   <description>
-    <p>An app to send and recieve good vibes anonyously</p>
+    <p>An app to send and receive good vibes anonymously</p>
   </description>
   ​<launchable type="desktop-id">com.github.coralynnmay.goodvibesapp.desktop</launchable>
   <releases>
@@ -19,10 +19,10 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/coralynnmay/goodvibes.app/master/data/screenshot_1.png</image>
+      <image>https://raw.githubusercontent.com/coralynnmay/goodvibesapp/master/data/screenshot_1.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/coralynnmay/goodvibes.app/master/data/screenshot_2.png</image>
+      <image>https://raw.githubusercontent.com/coralynnmay/goodvibesapp/master/data/screenshot_2.png</image>
     </screenshot>
   </screenshots>
   <developer_name>Coralynn May Colombe</developer_name>

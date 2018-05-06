@@ -2,7 +2,7 @@
 Name=GoodVibes
 GenericName=GoodVibes
 Comment=Send and receive good vibes
-Categories=Education;
+Categories=Feed;Network;
 Exec=@EXEC_NAME@
 Icon=com.github.coralynnmay.goodvibesapp
 Terminal=false
